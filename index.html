@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Wishlist Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📋 Wishlist Pokémon</h1>
+
+    <div id="top-buttons" style="text-align:center; margin-bottom: 15px;">
+        <button id="download">💾 Télécharger la sélection</button>
+        <button id="reset-quantities-btn">♻️ Réinitialiser les quantités</button>
+    </div>
+
+    <p id="counter" style="text-align:center;">✅ 0 carte(s) cochée(s)</p>
+
+
+
+    <div id="filters">
+        <input type="text" id="filter-name" placeholder="Filtrer par nom...">
+        <select id="filter-series">
+            <option value="">Toutes les séries</option>
+        </select>
+        <select id="filter-rarity">
+            <option value="">Toutes les raretés</option>
+        </select>
+        <select id="filter-stock-status">
+            <option value="">Tous stocks confondus</option>
+            <option value="inStock">Stock ≥ 1</option>
+            <option value="markedOutOfStock">Marqué "pas en stock"</option>
+            <option value="missingOutOfStock">Stock = 0 sans marque "pas en stock"</option>
+        </select>
+        <select id="sort-by">
+            <option value="">Tri par défaut</option>
+            <option value="name">Trier par nom</option>
+            <option value="series">Trier par série</option>
+            <option value="rarity">Trier par rareté</option>
+        </select>
+        <button id="reset-filters">Réinitialiser</button>
+    </div>
+
+    <div id="card-list"></div>
+
+    <script src="script.min.js"></script>
+</body>
+</html>
